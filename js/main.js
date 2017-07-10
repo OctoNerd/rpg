@@ -37,6 +37,21 @@ var ClickRpg = {
         } else if( skillName === "firemaking") {
             ClickRpg.player.firemaking.level = lvl;
         }
+    },
+    addXp: function(skillName) {
+        switch(skillName){
+            case "woodcutting":
+                ClickRpg.player.woodcutting.totalXp += 100;
+                break;
+            case "firemaking":
+                ClickRpg.player.firemaking.totalXp += 35;
+                break;
+            default:
+                console.log("ERROR: addxp not working");
+                break;
+        }
+        
+        handlers.update();
     }
 }
 
@@ -46,19 +61,7 @@ var handlers = {
         handlers.update();
     },
     addXp: function(skillName){
-        switch(skillName){
-            case "woodcutting":
-                ClickRpg.player.woodcutting.totalXp += 600;
-                break;
-            case "firemaking":
-                ClickRpg.player.firemaking.totalXp += 700;
-                break;
-            default:
-                console.log("ERROR: addxp not working");
-                break;
-        }
-        
-        handlers.update();
+        ClickRpg.addXp(skillName);
     },
     update: function(){
         let wcXp = ClickRpg.player.woodcutting.totalXp;
@@ -112,5 +115,3 @@ var view = {
 }
 
 handlers.init();
-console.log(view.xpBtns);
-console.log(view.xpLabels);
