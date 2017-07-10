@@ -11,14 +11,27 @@
 
 </head>
 <body>
-    
-    <button class="btn btn_addWcXp">Add 100 WCxp</button>
-    <div class="label label_wcXp">0</div>
-    <div class="label label_wcLevel">1</div>
+    <div class="btn-wrap">
+        <button class="btn btn_addWcXp">Add 100 WCxp</button>
+        <button class="btn btn_addFmXp">Add 35 FMxp</button>
+    </div>
 
-    <button class="btn btn_addFmXp">Add 35 FMxp</button>
-    <div class="label label_fmXp">0</div>
-    <div class="label label_fmLevel">1</div>
+    <div class="xp-bar-wrap">
+        <div class="xp-bar">
+            <div class="xp-bar--wc"></div>
+        </div>
+        <div class="xp-bar">
+            <div class="xp=bar--fm"></div>
+        </div>
+    </div>
+
+    <div class="label-wrap">
+        <span>Woodcutting xp: </span><div class="label label_wcXp">0</div>
+        <span>Woodcutting Level: </span><div class="label label_wcLevel">1</div>
+
+        <span>Firemaking xp: </span><div class="label label_fmXp">0</div>
+        <span>Firemaking Level: </span><div class="label label_fmLevel">1</div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

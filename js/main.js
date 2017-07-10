@@ -78,6 +78,7 @@ var handlers = {
         fmLvl = ClickRpg.player.firemaking.level;
 
         view.render(wcXp, wcLvl, fmXp, fmLvl);
+        
     }
 }
 
@@ -110,6 +111,9 @@ var view = {
         view.wcLvlLabel.innerHTML = wcLvl;
         view.fmXpLabel.innerHTML = fmXp;
         view.fmLvlLabel.innerHTML = fmLvl;
+    },
+    displayXpBars: function() {
+        var wcXpBar = document.getElementsByClassName("xp-bar--wc");
     }
 
 }

@@ -1,3 +1,46 @@
-body {
-    background: pink;
+.btn-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: green;
+    width: 200px;
+}
+
+.btn {
+    border: none;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    background: yellow;
+    margin: 20px;
+
+    &:hover {
+        background: orange;
+    }
+}
+
+.label-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.xp-bar-wrap {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.xp-bar{
+    height: 10px;
+    border: 1px solid black;
+}
+
+.xp-bar--wc {
+    height: 10px;
+    background: green;
+    width: 50%;
 }
